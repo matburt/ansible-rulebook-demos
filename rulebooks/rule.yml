@@ -1,5 +1,5 @@
 ---
-- name: sensu-kafka demo rules
+- name: demo
   hosts: localhost
   sources:
     - name: kafka
