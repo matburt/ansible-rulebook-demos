@@ -1,0 +1,14 @@
+---
+- name: sensu-kafka demo rules
+  hosts: localhost
+  sources:
+    - name: kafka
+      ansible.eda.kafka:
+        topic: demo-events
+        host: 10.0.0.18
+        port: 9092
+  rules:
+    - name: debug events
+      action:
+	debug:
+          var: event
