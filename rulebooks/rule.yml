@@ -9,6 +9,6 @@
         port: 9092
   rules:
     - name: debug events
+      condition: true
       action:
-      debug:
-          var: event
+        debug:
